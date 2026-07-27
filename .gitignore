@@ -1,5 +1,6 @@
 .vs/
 .vscode/
+.git/
 
 bin/
 obj/
