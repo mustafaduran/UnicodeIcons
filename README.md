@@ -69,4 +69,3 @@ public class DemoForm : Form
 
 ---
 
-Eğer isterseniz, ben bu README'yi repoya ekledim. Ayrıca dilerseniz `UISymbols.cs` dosyasını önerdiğim şekilde `public static partial class UISymbols` ve bir `namespace` ekleyerek küçük bir PR hazırlayabilirim.
