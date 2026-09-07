@@ -2,7 +2,7 @@
 {
     public partial class Icons
     {
-        // Sistem & UI
+        // Sistem & UI Icons
         public static class Status
         {
             public const string Success = "✔";
