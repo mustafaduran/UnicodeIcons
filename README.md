@@ -9,7 +9,7 @@ Türkçe
 
 ## Hakkında
 
-Bu depo, C# masaüstü uygulamalarında (Windows Forms, WPF, vb.) kullanılmak üzere düzenlenmiş Unicode sembol ve emoji sabitlerini içerir. `UISymbols` sınıfındaki `public const string` alanlarını doğrudan UI öğelerinizin `Text`/`Content` özelliklerinde kullanabilirsiniz.
+Bu repo, C# masaüstü uygulamalarında (Windows Forms, WPF, vb.) kullanılmak üzere düzenlenmiş Unicode sembol ve emoji sabitlerini içerir. `UISymbols` sınıfındaki `public const string` alanlarını doğrudan UI öğelerinizin `Text`/`Content` özelliklerinde kullanabilirsiniz.
 
 ## Kurulum
 
