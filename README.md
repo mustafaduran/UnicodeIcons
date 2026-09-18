@@ -2,6 +2,109 @@
 
 A collection of Unicode symbols and emoji constants for C# desktop applications (WinForms, WPF, etc.).
 
+# Unicode Icons Reference
+
+This document organizes the provided C# icon constants into clean, readable Markdown tables categorized by their respective classes and themes.
+
+## 1. Status
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `Success` | ✔ | `"\u2714"` |
+| `Error` | ✖ | `"\u2716"` |
+| `Warning` | ⚠ | `"\u26A0"` |
+| `Info` | ℹ | `"\u2139"` |
+| `Lock` | 🔒 | `"\U0001F512"` |
+| `Unlock` | 🔓 | `"\U0001F513"` |
+
+## 2. UI
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `Settings` | ⚙ | `"\u2699"` |
+| `Search` | 🔍 | `"\U0001F50D"` |
+| `Save` | 💾 | `"\U0001F4BE"` |
+| `Folder` | 📁 | `"\U0001F4C1"` |
+| `File` | 📄 | `"\U0001F4C4"` |
+| `Trash` | 🗑 | `"\U0001F5D1"` |
+| `Edit` | ✏ | `"\u270F"` |
+| `Home` | 🏠 | `"\U0001F3E0"` |
+
+## 3. Ratings (Favori / Değerlendirme)
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `Star` | ★ | `"\u2605"` |
+| `Heart` | ❤ | `"\u2764"` |
+
+## 4. Media (Medya Kontrolleri)
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `Play` | ▶ | `"\u25B6"` |
+| `Pause` | ⏸ | `"\u23F8"` |
+| `Stop` | ⏹ | `"\u23F9"` |
+| `Refresh` | 🔄 | `"\U0001F504"` |
+
+## 5. Arrows (Oklar)
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `Right` | ➔ | `"\u2794"` |
+| `Left` | ⬅ | `"\u2B05"` |
+| `Up` | ⬆ | `"\u2B06"` |
+| `Down` | ⬇ | `"\u2B07"` |
+
+## 6. Communication (Kullanıcı & İletişim)
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `User` | 👤 | `"\U0001F464"` |
+| `Users` | 👥 | `"\U0001F465"` |
+| `Mail` | ✉ | `"\u2709"` |
+| `Phone` | 📞 | `"\U0001F4DE"` |
+| `Bell` | 🔔 | `"\U0001F514"` |
+| `Eye` | 👁 | `"\U0001F441"` |
+| `EyeClosed` | 🙈 | `"\U0001F648"` |
+
+## 7. Data (Dosya & Veri)
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `Attachment` | 📎 | `"\U0001F4CE"` |
+| `Link` | 🔗 | `"\U0001F517"` |
+| `Database` | 🗄 | `"\U0001F5C4"` |
+| `Filter` | 🧹 | `"\U0001F9F9"` |
+| `Tag` | 🏷 | `"\U0001F3F7"` |
+| `Calendar` | 📅 | `"\U0001F4C5"` |
+| `Clock` | 🕒 | `"\U0001F552"` |
+
+## 8. Network (Ağ & Donanım)
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `Wifi` | 📶 | `"\U0001F4F6"` |
+| `Globe` | 🌐 | `"\U0001F310"` |
+| `Server` | 🖥 | `"\U0001F5A5"` |
+| `Terminal` | 💻 | `"\U0001F4BB"` |
+| `Signal` | 📡 | `"\U0001F4E1"` |
+
+## 9. Actions (Onay, İşlem & Değerlendirme)
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `CheckMark` | ✅ | `"\u2705"` |
+| `CrossMark` | ❌ | `"\u274C"` |
+| `Question` | ❓ | `"\u2753"` |
+| `Exclamation` | ❗ | `"\u2757"` |
+| `Plus` | ➕ | `"\u2795"` |
+| `Minus` | ➖ | `"\u2796"` |
+| `ThumbsUp` | 👍 | `"\U0001F44D"` |
+| `ThumbsDown` | 👎 | `"\U0001F44E"` |
+
+## 10. Navigation (Yönler & Arayüz Navigasyonu)
+| Icon Name | Symbol | Code/Character |
+| :--- | :---: | :--- |
+| `FastForward` | ⏩ | `"\u23E9"` |
+| `Rewind` | ⏪ | `"\u23EA"` |
+| `Expand` | ⤢ | `"\u2922"` |
+| `Collapse` | ⤡ | `"\u2921"` |
+| `Menu` | ☰ | `"\u2630"` |
+| `MoreHorizontal` | ⋯ | `"\u22EF"` |
+| `MoreVertical` | ⋮ | `"\u22EE"` |
+
+
 ---
 
 Türkçe
