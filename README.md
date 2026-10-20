@@ -1,13 +1,75 @@
 # UnicodeIcons
 
-A collection of Unicode symbols and emoji constants for C# desktop applications (WinForms, WPF, etc.).
+A collection of Unicode symbols and emoji constants for C# desktop applications such as WinForms, WPF, and console apps.
 
-# Unicode Icons Reference
+This project provides a simple `UISymbols` class with ready-to-use icon constants that can be displayed in labels, buttons, menus, and text-based UI elements.
 
-This document organizes the provided C# icon constants into clean, readable Markdown tables categorized by their respective classes and themes.
+## Features
 
-## 1. Status
-| Icon Name | Symbol | Code/Character |
+- Ready-to-use Unicode constants for UI scenarios
+- Works well with WinForms and WPF
+- Easy to use in code or XAML
+- Organized by category for quick lookup
+
+## Installation
+
+1. Copy the `UISymbols.cs` file into your project (for example under `Helpers`, `UI`, or `Properties`).
+2. Make sure the file is saved as UTF-8.
+3. Add the correct namespace if needed.
+
+## Usage Examples
+
+### 1. WinForms
+
+```csharp
+label1.Text = UISymbols.Settings + " Settings";
+label2.Text = UISymbols.Success + " Success";
+button1.Text = UISymbols.Search + " Search";
+```
+
+### 2. WPF (code-behind)
+
+```csharp
+myTextBlock.Text = UISymbols.Search + " Search";
+myButton.Content = UISymbols.Save + " Save";
+```
+
+### 3. WPF (XAML)
+
+```xml
+<TextBlock Text="{x:Static ui:UISymbols.Search}" />
+<TextBlock Text="{x:Static ui:UISymbols.Home}" />
+```
+
+### 4. Using `using static`
+
+```csharp
+using static YourNamespace.UISymbols;
+
+label1.Text = Settings + " Settings";
+button1.Text = Star + " Favorites";
+```
+
+### 5. Console application
+
+```csharp
+Console.WriteLine($"{UISymbols.Star} Added to favorites");
+Console.WriteLine($"{UISymbols.CheckMark} Completed");
+```
+
+### 6. Unicode escape / code usage
+
+```csharp
+label1.Text = "\u2605"; // ★
+char star = (char)0x2605;
+label1.Text = star.ToString();
+```
+
+## Icon Reference
+
+### Status
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `Success` | ✔ | `"\u2714"` |
 | `Error` | ✖ | `"\u2716"` |
@@ -16,8 +78,9 @@ This document organizes the provided C# icon constants into clean, readable Mark
 | `Lock` | 🔒 | `"\U0001F512"` |
 | `Unlock` | 🔓 | `"\U0001F513"` |
 
-## 2. UI
-| Icon Name | Symbol | Code/Character |
+### UI
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `Settings` | ⚙ | `"\u2699"` |
 | `Search` | 🔍 | `"\U0001F50D"` |
@@ -28,30 +91,34 @@ This document organizes the provided C# icon constants into clean, readable Mark
 | `Edit` | ✏ | `"\u270F"` |
 | `Home` | 🏠 | `"\U0001F3E0"` |
 
-## 3. Ratings (Favori / Değerlendirme)
-| Icon Name | Symbol | Code/Character |
+### Ratings
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `Star` | ★ | `"\u2605"` |
 | `Heart` | ❤ | `"\u2764"` |
 
-## 4. Media (Medya Kontrolleri)
-| Icon Name | Symbol | Code/Character |
+### Media Controls
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `Play` | ▶ | `"\u25B6"` |
 | `Pause` | ⏸ | `"\u23F8"` |
 | `Stop` | ⏹ | `"\u23F9"` |
 | `Refresh` | 🔄 | `"\U0001F504"` |
 
-## 5. Arrows (Oklar)
-| Icon Name | Symbol | Code/Character |
+### Arrows
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `Right` | ➔ | `"\u2794"` |
 | `Left` | ⬅ | `"\u2B05"` |
 | `Up` | ⬆ | `"\u2B06"` |
 | `Down` | ⬇ | `"\u2B07"` |
 
-## 6. Communication (Kullanıcı & İletişim)
-| Icon Name | Symbol | Code/Character |
+### Communication
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `User` | 👤 | `"\U0001F464"` |
 | `Users` | 👥 | `"\U0001F465"` |
@@ -61,8 +128,9 @@ This document organizes the provided C# icon constants into clean, readable Mark
 | `Eye` | 👁 | `"\U0001F441"` |
 | `EyeClosed` | 🙈 | `"\U0001F648"` |
 
-## 7. Data (Dosya & Veri)
-| Icon Name | Symbol | Code/Character |
+### Data
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `Attachment` | 📎 | `"\U0001F4CE"` |
 | `Link` | 🔗 | `"\U0001F517"` |
@@ -72,8 +140,9 @@ This document organizes the provided C# icon constants into clean, readable Mark
 | `Calendar` | 📅 | `"\U0001F4C5"` |
 | `Clock` | 🕒 | `"\U0001F552"` |
 
-## 8. Network (Ağ & Donanım)
-| Icon Name | Symbol | Code/Character |
+### Network
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `Wifi` | 📶 | `"\U0001F4F6"` |
 | `Globe` | 🌐 | `"\U0001F310"` |
@@ -81,8 +150,9 @@ This document organizes the provided C# icon constants into clean, readable Mark
 | `Terminal` | 💻 | `"\U0001F4BB"` |
 | `Signal` | 📡 | `"\U0001F4E1"` |
 
-## 9. Actions (Onay, İşlem & Değerlendirme)
-| Icon Name | Symbol | Code/Character |
+### Actions
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `CheckMark` | ✅ | `"\u2705"` |
 | `CrossMark` | ❌ | `"\u274C"` |
@@ -93,8 +163,9 @@ This document organizes the provided C# icon constants into clean, readable Mark
 | `ThumbsUp` | 👍 | `"\U0001F44D"` |
 | `ThumbsDown` | 👎 | `"\U0001F44E"` |
 
-## 10. Navigation (Yönler & Arayüz Navigasyonu)
-| Icon Name | Symbol | Code/Character |
+### Navigation
+
+| Icon Name | Symbol | Unicode / Code |
 | :--- | :---: | :--- |
 | `FastForward` | ⏩ | `"\u23E9"` |
 | `Rewind` | ⏪ | `"\u23EA"` |
@@ -104,155 +175,16 @@ This document organizes the provided C# icon constants into clean, readable Mark
 | `MoreHorizontal` | ⋯ | `"\u22EF"` |
 | `MoreVertical` | ⋮ | `"\u22EE"` |
 
+## Font and Platform Notes
 
----
-
-Türkçe
-======
-
-## Hakkında
-
-Bu repo, C# masaüstü uygulamalarında (Windows Forms, WPF, vb.) kullanılmak üzere düzenlenmiş Unicode sembol ve emoji sabitlerini içerir. `UISymbols` sınıfındaki `public const string` alanlarını doğrudan UI öğelerinizin `Text`/`Content` özelliklerinde kullanabilirsiniz.
-
-## Kurulum
-
-1. `UISymbols.cs` dosyasını projenize ekleyin (ör. `Helpers` veya `Properties` klasörü).
-2. Dosyanın UTF-8 olarak kaydedildiğinden emin olun; aksi halde bazı emoji/simgeler bozulabilir.
-3. Gerekirse uygun bir namespace ekleyin (`MyApp.UI` gibi).
-
-## Kullanım Örnekleri
-
-1) Windows Forms — Kod içinde
-
-```csharp
-// Doğrudan sabitleri kullanma
-label1.Text = UISymbols.Settings + " Ayarlar";
-
-// C# 6+ ile using static kullanımı
-// using static YourNamespace.UISymbols;
-// label1.Text = Settings + " Ayarlar";
-```
-
-2) WPF — Code-behind
-
-```csharp
-myTextBlock.Text = UISymbols.Search + " Ara";
-```
-
-3) WPF — XAML (x:Static ile)
-
-```xml
-<!-- XAML içinde kullanmak için: -->
-<!-- xmlns:ui="clr-namespace:YourNamespace" -->
-<TextBlock Text="{x:Static ui:UISymbols.Search}" />
-```
-
-4) Konsol uygulaması
-
-```csharp
-Console.WriteLine($"{UISymbols.Star} Favorilere eklendi");
-```
-
-5) Unicode kaçış dizisi veya kod kullanımı
-
-```csharp
-// Unicode kaçış dizisi
-label1.Text = "\u2605"; // "★"
-
-// Karakter koduyla
-char star = (char)0x2605;
-label1.Text = star.ToString();
-```
-
-## Yazı Tipi ve Platform Desteği
-
-- Emoji ve bazı gelişmiş semboller işletim sistemi ve yazı tipine bağlı olarak farklı görünür veya hiç görünmeyebilir.
-- Windows için "Segoe UI Symbol" veya "Segoe UI Emoji" gibi yazı tipleri genelde daha iyi destek sağlar.
-- Belirli bir sembol görünmüyorsa alternatif bir yazı tipi ya da ikon (resim) kullanmayı değerlendirin.
-
-## Örnek Semboller (küçük seçki)
-
-- Yönler: ← ↑ → ↓ (U+2190–2193)
-- Durum/işaretler: ✔ ✖ ⚠ (U+2714, U+2716, U+26A0)
-- Posta/Çağrı: ✉ ✆ ☎ (U+2709, U+260E)
-- Emoji: 💾 🖨️ 🔍 ⭐
-
-## Katkıda Bulunma
-
-Katkılarınızı bekleriz — yeni sembol önerileri, kategorilendirme veya hata düzeltmeleri için lütfen issue açın veya pull request gönderin. Eklediğiniz semboller için kısa bir açıklama ve kullanım örneği ekleyin.
-
----
-
-English
-=======
-
-## About
-
-This repository provides Unicode symbol and emoji constants intended for use in C# desktop applications (Windows Forms, WPF, etc.). The `UISymbols` class exposes `public const string` fields that you can reference directly in UI element `Text`/`Content` properties.
-
-## Installation
-
-1. Add the `UISymbols.cs` file to your project (e.g. in a `Helpers` or `Properties` folder).
-2. Ensure the file is saved in UTF-8 encoding so emoji and symbols render correctly.
-3. Add or adjust the namespace if necessary (e.g. `MyApp.UI`).
-
-## Usage Examples
-
-1) Windows Forms — in code
-
-```csharp
-// Use the constants directly
-label1.Text = UISymbols.Settings + " Settings";
-
-// Or with using static (C# 6+):
-// using static YourNamespace.UISymbols;
-// label1.Text = Settings + " Settings";
-```
-
-2) WPF — code-behind
-
-```csharp
-myTextBlock.Text = UISymbols.Search + " Search";
-```
-
-3) WPF — XAML (x:Static)
-
-```xml
-<!-- In XAML: -->
-<!-- xmlns:ui="clr-namespace:YourNamespace" -->
-<TextBlock Text="{x:Static ui:UISymbols.Search}" />
-```
-
-4) Console application
-
-```csharp
-Console.WriteLine($"{UISymbols.Star} Added to favorites");
-```
-
-5) Using Unicode escapes or character codes
-
-```csharp
-// Unicode escape
-label1.Text = "\u2605"; // "★"
-
-// Using a character code
-char star = (char)0x2605;
-label1.Text = star.ToString();
-```
-
-## Font & Platform Support
-
-- Emoji and some symbols may render differently or not at all depending on OS and font.
-- On Windows, fonts like "Segoe UI Symbol" or "Segoe UI Emoji" generally provide better coverage.
-- If a symbol doesn't render, consider using an alternate font or an image/icon asset.
-
-## Example Symbols (small sample)
-
-- Arrows/Direction: ← ↑ → ↓ (U+2190–2193)
-- Status/Marks: ✔ ✖ ⚠ (U+2714, U+2716, U+26A0)
-- Mail/Call: ✉ ✆ ☎ (U+2709, U+260E)
-- Emoji: 💾 🖨️ 🔍 ⭐
+- Some emoji and symbols may render differently depending on the operating system and font.
+- On Windows, fonts such as `Segoe UI Symbol` or `Segoe UI Emoji` usually provide better support.
+- If a symbol does not appear correctly, consider using a different font or a custom image asset.
 
 ## Contributing
 
-Please open an issue or submit a pull request with new symbols, categorization improvements, or fixes. Include a short description and usage examples for additions.
+Contributions are welcome. If you want to add new symbols, improve categorization, or fix issues, please open an issue or submit a pull request.
+
+## License
+
+This project is provided as-is for educational and development use. Please check the repository license for additional details.
