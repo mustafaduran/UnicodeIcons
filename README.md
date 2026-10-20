@@ -2,7 +2,7 @@
 
 A collection of Unicode symbols and emoji constants for C# desktop applications such as WinForms, WPF, and console apps.
 
-This project provides a simple `UISymbols` class with ready-to-use icon constants that can be displayed in labels, buttons, menus, and text-based UI elements.
+This project provides a simple `UnicodeIcons` class with ready-to-use icon constants that can be displayed in labels, buttons, menus, and text-based UI elements.
 
 ## Features
 
@@ -13,7 +13,7 @@ This project provides a simple `UISymbols` class with ready-to-use icon constant
 
 ## Installation
 
-1. Copy the `UISymbols.cs` file into your project (for example under `Helpers`, `UI`, or `Properties`).
+1. Copy the `UnicodeIcons.cs` file into your project (for example under `Helpers`, `UI`, or `Properties`).
 2. Make sure the file is saved as UTF-8.
 3. Add the correct namespace if needed.
 
@@ -22,29 +22,29 @@ This project provides a simple `UISymbols` class with ready-to-use icon constant
 ### 1. WinForms
 
 ```csharp
-label1.Text = UISymbols.Settings + " Settings";
-label2.Text = UISymbols.Success + " Success";
-button1.Text = UISymbols.Search + " Search";
+label1.Text = Icons.Settings + " Settings";
+label2.Text = Icons.Success + " Success";
+button1.Text = Icons.Search + " Search";
 ```
 
 ### 2. WPF (code-behind)
 
 ```csharp
-myTextBlock.Text = UISymbols.Search + " Search";
-myButton.Content = UISymbols.Save + " Save";
+myTextBlock.Text = Icons.Search + " Search";
+myButton.Content = Icons.Save + " Save";
 ```
 
 ### 3. WPF (XAML)
 
 ```xml
-<TextBlock Text="{x:Static ui:UISymbols.Search}" />
-<TextBlock Text="{x:Static ui:UISymbols.Home}" />
+<TextBlock Text="{x:Static ui:Icons.Search}" />
+<TextBlock Text="{x:Static ui:Icons.Home}" />
 ```
 
 ### 4. Using `using static`
 
 ```csharp
-using static YourNamespace.UISymbols;
+using static YourNamespace.Icons;
 
 label1.Text = Settings + " Settings";
 button1.Text = Star + " Favorites";
@@ -53,8 +53,8 @@ button1.Text = Star + " Favorites";
 ### 5. Console application
 
 ```csharp
-Console.WriteLine($"{UISymbols.Star} Added to favorites");
-Console.WriteLine($"{UISymbols.CheckMark} Completed");
+Console.WriteLine($"{Icons.Star} Added to favorites");
+Console.WriteLine($"{Icons.CheckMark} Completed");
 ```
 
 ### 6. Unicode escape / code usage
